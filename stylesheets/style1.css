@@ -1,0 +1,163 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font: 16px 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    user-select: none;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: background-color 0.3s, backdrop-filter 0.3s;
+    font-weight: 600;
+}
+
+
+#landing, .imagecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.colorpar, .content p, .organization p {
+    color: #736414;
+}
+
+.colorpar, .content p {
+    max-width: 500px;
+}
+
+.jobdesc {
+    text-align: start;
+    margin-left: -320px;
+}
+
+.jobdesc p {
+    margin-bottom: -8px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 100px;
+}
+
+.navbutton {
+    margin-right: 40px;
+    text-decoration: none;
+    color: #1F4096;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.navbutton:hover, .navbutton.active {
+    color: #13285a;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+     /*transform: scale(1.1);*/
+}
+
+#about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 200px auto 100px;
+}
+
+.content {
+    flex: 2;
+    text-align: left;
+    margin-top: -120px;
+}
+
+.content img {
+    width: 400px;
+    margin-left: 0;
+}
+
+.organization {
+    margin-top: 230px;
+}
+
+.organization p {
+    max-width: 300px;
+    text-align: end;
+    margin-left: 40px;
+}
+
+
+.organization img {
+    align-content: end;
+    margin-left: 130px;
+}
+
+#preview {
+    display: flex;
+    width: 90%;
+    margin: 100px auto;
+}
+
+#preview .content {
+    flex: 1;
+    text-align: left;
+}
+
+#preview .layout1 {
+    margin-left: 20px;
+}
+
+#preview .layout1 img {
+    width: 400px;
+    margin-top: -30px;
+}
+
+#preview .picture {
+    margin-left: 140px;
+}
+
+#preview .picture img {
+    width: 180px;
+    transition: transform 0.3s;
+}
+
+#preview .picture img:hover, .imagecontainer:hover {
+    transform: scale(1.1);
+}
+
+.donday {
+    color: #820000;
+    margin-bottom: -10px;
+}
+
+.donday h4 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #1F4096;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #13285a;
+}

@@ -1,0 +1,22 @@
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.imagecontainer img {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+    height: 360px;
+    margin-left: 20px;
+}
+
+.imagecontainer img.slide-in {
+    animation: slideIn 0.8s forwards;
+}
