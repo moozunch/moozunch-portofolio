@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    font: 16px 'Plus Jakarta Sans', sans-serif;
+    font: 1rem 'Plus Jakarta Sans', sans-serif;
     font-weight: 500;
     user-select: none;
 }
@@ -18,7 +18,6 @@ header {
     font-weight: 600;
 }
 
-
 #landing, .imagecontainer {
     display: flex;
     justify-content: center;
@@ -31,28 +30,28 @@ header {
 }
 
 .colorpar, .content p {
-    max-width: 500px;
+    max-width: 31.25rem; /* 500px */
 }
 
 .jobdesc {
     text-align: start;
-    margin-left: -320px;
+    margin-left: -20rem; /* -320px */
 }
 
 .jobdesc p {
-    margin-bottom: -8px;
+    margin-bottom: -0.5rem; /* -8px */
 }
 
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0;
-    margin-bottom: 100px;
+    padding: 1.25rem 0; /* 20px */
+    margin-bottom: 6.25rem; /* 100px */
 }
 
 .navbutton {
-    margin-right: 40px;
+    margin-right: 2.5rem; /* 40px */
     text-decoration: none;
     color: #1F4096;
     transition: color 0.3s, text-decoration 0.3s;
@@ -61,49 +60,51 @@ nav {
 .navbutton:hover, .navbutton.active {
     color: #13285a;
     text-decoration: underline;
-    text-underline-offset: 10px;
-     /*transform: scale(1.1);*/
+    text-underline-offset: 0.625rem; /* 10px */
 }
 
 #about {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
-    margin: 200px auto 100px;
+    width: 90%;
+    margin: 12.5rem auto 6.25rem; /* 200px auto 100px */
 }
 
 .content {
     flex: 2;
     text-align: left;
-    margin-top: -120px;
+    margin-top: -7.5rem; /* -120px */
 }
 
 .content img {
-    width: 400px;
+    width: 100%;
+    max-width: 25rem; /* 400px */
     margin-left: 0;
 }
 
 .organization {
-    margin-top: 230px;
+    margin-top: 14.375rem; /* 230px */
 }
 
 .organization p {
-    max-width: 300px;
+    max-width: 18.75rem; /* 300px */
     text-align: end;
-    margin-left: 40px;
+    margin-left: 2.5rem; /* 40px */
 }
-
 
 .organization img {
     align-content: end;
-    margin-left: 130px;
+    margin-left: 8.125rem; /* 130px */
+    width: 60%;
+    max-width: 18.75rem; /* 300px */
 }
 
 #preview {
     display: flex;
+    flex-direction: column; /* Default to column for mobile */
     width: 90%;
-    margin: 100px auto;
+    margin: 6.25rem auto; /* 100px auto */
 }
 
 #preview .content {
@@ -112,20 +113,27 @@ nav {
 }
 
 #preview .layout1 {
-    margin-left: 20px;
+    margin-left: 1.25rem; /* 20px */
+    width: 100%; /* Ensure it takes full width */
 }
 
 #preview .layout1 img {
-    width: 400px;
-    margin-top: -30px;
+    width: 100%;
+    max-width: 25rem; /* 400px */
+    margin-top: -1.875rem; /* -30px */
 }
 
 #preview .picture {
-    margin-left: 140px;
+    margin-left: 0; /* Reset margin */
+    margin-top: 2rem; /* Add some space above */
+    width: 100%; /* Ensure it takes full width */
+    display: flex;
+    justify-content: center; /* Center the images */
 }
 
 #preview .picture img {
-    width: 180px;
+    width: 100%;
+    max-width: 11.25rem; /* 180px */
     transition: transform 0.3s;
 }
 
@@ -135,7 +143,7 @@ nav {
 
 .donday {
     color: #820000;
-    margin-bottom: -10px;
+    margin-bottom: -0.625rem; /* -10px */
 }
 
 .donday h4 {
@@ -146,12 +154,12 @@ nav {
 
 .button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem; /* 10px 20px */
     font-size: 1rem;
     color: #fff;
     background-color: #1F4096;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.3125rem; /* 5px */
     text-align: center;
     text-decoration: none;
     cursor: pointer;
@@ -160,4 +168,16 @@ nav {
 
 .button:hover {
     background-color: #13285a;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    #preview {
+        flex-direction: row; /* Change direction to row for larger screens */
+    }
+
+    #preview .picture {
+        margin-left: 8.75rem; /* 140px */
+        margin-top: 0; /* Reset margin */
+    }
 }
