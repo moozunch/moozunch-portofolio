@@ -30,28 +30,28 @@ header {
 }
 
 .colorpar, .content p {
-    max-width: 31.25rem; /* 500px */
+    max-width: 31.25rem;
 }
 
 .jobdesc {
     text-align: start;
-    margin-left: -20rem; /* -320px */
+    margin-left: -20rem;
 }
 
 .jobdesc p {
-    margin-bottom: -0.5rem; /* -8px */
+    margin-bottom: -0.5rem;
 }
 
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.25rem 0; /* 20px */
-    margin-bottom: 6.25rem; /* 100px */
+    padding: 1.25rem 0;
+    margin-bottom: 6.25rem;
 }
 
 .navbutton {
-    margin-right: 2.5rem; /* 40px */
+    margin-right: 2.5rem;
     text-decoration: none;
     color: #1F4096;
     transition: color 0.3s, text-decoration 0.3s;
@@ -60,7 +60,7 @@ nav {
 .navbutton:hover, .navbutton.active {
     color: #13285a;
     text-decoration: underline;
-    text-underline-offset: 0.625rem; /* 10px */
+    text-underline-offset: 0.625rem;
 }
 
 #about {
@@ -68,82 +68,82 @@ nav {
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    margin: 12.5rem auto 6.25rem; /* 200px auto 100px */
+    margin: 12.5rem auto 6.25rem;
 }
 
 .content {
     flex: 2;
     text-align: left;
-    margin-top: -7.5rem; /* -120px */
+    margin-top: -7.5rem;
 }
 
 .content img {
     width: 100%;
-    max-width: 25rem; /* 400px */
+    max-width: 25rem;
     margin-left: 0;
 }
 
 .organization {
-    margin-top: 14.375rem; /* 230px */
+    margin-top: 14.375rem;
 }
 
 .organization p {
-    max-width: 18.75rem; /* 300px */
+    max-width: 18.75rem;
     text-align: end;
-    margin-left: 2.5rem; /* 40px */
+    margin-left: 2.5rem;
 }
 
 .organization img {
     align-content: end;
-    margin-left: 8.125rem; /* 130px */
+    margin-left: 8.125rem;
     width: 60%;
-    max-width: 18.75rem; /* 300px */
+    max-width: 18.75rem;
 }
 
-#preview {
+.preview {
     display: flex;
-    flex-direction: column; /* Default to column for mobile */
+    flex-direction: column;
     width: 90%;
-    margin: 6.25rem auto; /* 100px auto */
+    margin: 6.25rem auto;
 }
 
-#preview .content {
+.preview .content {
     flex: 1;
     text-align: left;
 }
 
-#preview .layout1 {
-    margin-left: 1.25rem; /* 20px */
-    width: 100%; /* Ensure it takes full width */
-}
-
-#preview .layout1 img {
+.preview .layout1 {
+    margin-left: 1.25rem;
     width: 100%;
-    max-width: 25rem; /* 400px */
-    margin-top: -1.875rem; /* -30px */
 }
 
-#preview .picture {
-    margin-left: 0; /* Reset margin */
-    margin-top: 2rem; /* Add some space above */
-    width: 100%; /* Ensure it takes full width */
+.preview .layout1 img {
+    width: 100%;
+    max-width: 25rem;
+    margin-top: -1.875rem;
+}
+
+.preview .picture {
+    margin-left: 0;
+    margin-top: 2rem;
+    width: 100%;
     display: flex;
-    justify-content: center; /* Center the images */
+    justify-content: center;
 }
 
-#preview .picture img {
+.preview .picture img {
     width: 100%;
-    max-width: 11.25rem; /* 180px */
+    max-width: 11.25rem;
     transition: transform 0.3s;
 }
 
-#preview .picture img:hover, .imagecontainer:hover {
+.preview .picture img:hover, .imagecontainer:hover {
     transform: scale(1.1);
 }
 
 .donday {
     color: #820000;
-    margin-bottom: -0.625rem; /* -10px */
+    margin-bottom: -0.625rem;
 }
 
 .donday h4 {
@@ -154,12 +154,12 @@ nav {
 
 .button {
     display: inline-block;
-    padding: 0.625rem 1.25rem; /* 10px 20px */
+    padding: 0.625rem 1.25rem;
     font-size: 1rem;
     color: #fff;
     background-color: #1F4096;
     border: none;
-    border-radius: 0.3125rem; /* 5px */
+    border-radius: 0.3125rem;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
@@ -170,14 +170,27 @@ nav {
     background-color: #13285a;
 }
 
-/* Media query for larger screens */
+.target {
+    color : #40149E;
+}
+
+.rps {
+    color: #3C3C3C;
+}
+
+.blue {
+    color: #1F4096;
+}
+
+
 @media (min-width: 768px) {
-    #preview {
-        flex-direction: row; /* Change direction to row for larger screens */
+    .preview {
+        flex-direction: row;
     }
 
-    #preview .picture {
-        margin-left: 8.75rem; /* 140px */
-        margin-top: 0; /* Reset margin */
+    .preview .picture {
+        margin-left: 8.75rem;
+        margin-top: 0;
     }
 }
+
