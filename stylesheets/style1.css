@@ -182,6 +182,27 @@ nav {
     color: #1F4096;
 }
 
+.timeline-container {
+    background-color: #1F4096;
+    padding: 2rem;
+    color: white;
+    align-content: center;
+}
+
+.timeline-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.timeline-container th, .timeline-container td {
+    border: 1px solid white;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.timeline-container .free {
+    background-color: #3A5BA0;
+}
 
 @media (min-width: 768px) {
     .preview {
