@@ -52,4 +52,32 @@
         width: 22rem;
     }
 
+    .timeline-container {
+        padding: 0.8rem;
+        width: 100%;
+        overflow-x: auto;
+        position: relative;
+    }
+
+    .timeline-container table {
+        margin: 0 1rem;
+    }
+
+    .timeline-container th, .timeline-container td {
+        padding: 0.5rem;
+    }
+
+    /*.scroll-indicator {*/
+    /*    position: absolute;*/
+    /*    top: 50%;*/
+    /*    right: 1rem;*/
+    /*    transform: translateY(-50%);*/
+    /*    font-size: 1.5rem;*/
+    /*    color: #2c2c2c;*/
+    /*    display: block;*/
+    /*}*/
+
+    #jadwal img {
+        width: 23rem;
+    }
 }
