@@ -1,0 +1,51 @@
+@media (max-width: 768px) {
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    main {
+        margin-top: -4rem;
+    }
+
+    .mid {
+        height: 6rem;
+    }
+
+    .jobdesc {
+        margin-left: 0;
+    }
+
+    #about {
+        display: block;
+        margin: 11rem auto 6.25rem;
+    }
+
+    .content {
+        align-items: center;
+    }
+
+    .organization {
+        margin-top: 2rem;
+    }
+    .imagecontainer img{
+       align-items: center;
+        margin-right: 1rem;
+        margin-top: 2rem;
+    }
+
+    .preview {
+        margin-top: 0rem;
+    }
+
+    .preview .picture img{
+        width: 8rem;
+    }
+
+}
