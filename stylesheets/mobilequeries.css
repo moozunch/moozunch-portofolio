@@ -80,4 +80,9 @@
     #jadwal img {
         width: 23rem;
     }
+
+    .preview p {
+        max-width: 21.5rem;
+        text-align: justify;
+    }
 }
