@@ -44,8 +44,12 @@
         margin-top: 0rem;
     }
 
-    .preview .picture img{
-        width: 8rem;
+    .preview .picture img, .preview .image img, .preview .image1 img {
+        width: 7rem;
+    }
+
+    .preview .image2 img, .preview .image3 img {
+        width: 22rem;
     }
 
 }
