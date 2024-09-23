@@ -206,6 +206,8 @@ nav {
     background-color: #3A5BA0;
 }
 
+
+
 @media (min-width: 768px) {
     .preview {
         flex-direction: row;
