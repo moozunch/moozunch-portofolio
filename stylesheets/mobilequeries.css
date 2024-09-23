@@ -27,6 +27,12 @@
         margin: 11rem auto 6.25rem;
     }
 
+    .content p {
+        margin: 0 0.6rem;
+        text-align: justify;
+        max-width: 90%;
+    }
+
     .content {
         align-items: center;
     }
@@ -34,6 +40,10 @@
     .organization {
         margin-top: 2rem;
     }
+    .organization p {
+        max-width: 90%;
+    }
+
     .imagecontainer img{
        align-items: center;
         margin-right: 1rem;
@@ -82,7 +92,7 @@
     }
 
     .preview p {
-        max-width: 21.5rem;
+        max-width: 90%;
         text-align: justify;
     }
 }
