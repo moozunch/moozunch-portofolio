@@ -40,8 +40,16 @@
     .organization {
         margin-top: 2rem;
     }
+
+    .organization img {
+        width: 100%;
+        max-width: 18.75rem;
+        margin-left: 2rem;
+    }
+
     .organization p {
-        max-width: 90%;
+        max-width: 70%;
+        text-align: justify;
     }
 
     .imagecontainer img{
@@ -94,5 +102,9 @@
     .preview p {
         max-width: 90%;
         text-align: justify;
+    }
+
+    .album-header img {
+        width: 90%;
     }
 }
